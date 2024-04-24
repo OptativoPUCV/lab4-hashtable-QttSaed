@@ -87,13 +87,12 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) {    
   for (long i = 0; i < map->capacity; i++) {
-          Pair *pair = (Pair *)map->buckets[i];
-          if (pair != NULL && strcmp(pair->key, key) == 0) {
-              pair->key = NULL;
-              map->size--;
-              return;
-          }
-      }
+      Pair *pair = (Pair *)map->buckets[i];
+        if (pair != NULL && strcmp(pair->key, key) == 0) {
+            pair->key = NULL;
+            map->size--;
+            return;
+        }
   }
 }
 
