@@ -74,14 +74,14 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-  HashMap * mapa=(HashMap*)malloc(sizeof(HashMap));
+  HashMap * map=(HashMap*)malloc(sizeof(HashMap));
   if(map==NULL)return NULL;
-  mapa->buckets=(Pair**)calloc(capacity,sizeof(Pair*)); 
+  map->buckets=(Pair**)calloc(capacity,sizeof(Pair*)); 
   if(map->buckets==NULL)return NULL;
-  mapa->size=0; 
-  mapa->capacity=capacity;
-  mapa->current=-1;
-  return mapa;
+  map->size=0; 
+  map->capacity=capacity;
+  map->current=-1;
+  return map;
   
 }
 
