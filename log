@@ -53,3 +53,17 @@ Wed 24 Apr 2024 03:56:29 PM UTC:
  tests:  9|2
 total_score: 50/70
 36037e3
+Wed 24 Apr 2024 04:05:32 PM UTC: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:106:7: error: ‘longi’ undeclared (first use in this function)
+  106 |   for(longi=0;i< map->capacity;i++){
+      |       ^~~~~
+hashmap.c:106:7: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:106:15: error: ‘i’ undeclared (first use in this function)
+  106 |   for(longi=0;i< map->capacity;i++){
+      |               ^
+Compilation failed
+7d1c9ee
