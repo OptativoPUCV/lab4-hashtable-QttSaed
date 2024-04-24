@@ -67,3 +67,18 @@ hashmap.c:106:15: error: ‘i’ undeclared (first use in this function)
       |               ^
 Compilation failed
 7d1c9ee
+Wed 24 Apr 2024 04:07:35 PM UTC: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:118:41: error: statement with no effect [-Werror=unused-value]
+  118 |   for(long i = 0; i < map->current+1; i < map->capacity; i++){
+      |                                       ~~^~~~~~~~~~~~~~~
+hashmap.c:118:56: error: expected ‘)’ before ‘;’ token
+  118 |   for(long i = 0; i < map->current+1; i < map->capacity; i++){
+      |      ~                                                 ^
+      |                                                        )
+cc1: all warnings being treated as errors
+Compilation failed
+4d511b9
