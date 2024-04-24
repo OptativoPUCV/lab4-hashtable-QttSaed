@@ -14,3 +14,15 @@ Wed 24 Apr 2024 03:37:25 PM UTC:
  tests:  5|4
 total_score: 30/70
 687bf25
+Wed 24 Apr 2024 03:44:20 PM UTC: 
+ hashmap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:78:6: error: ‘map’ undeclared (first use in this function); did you mean ‘mapa’?
+   78 |   if(map==NULL)return NULL;
+      |      ^~~
+      |      mapa
+hashmap.c:78:6: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+90cf862
